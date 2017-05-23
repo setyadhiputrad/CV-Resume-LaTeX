@@ -1,0 +1,169 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1, 21 November 2016) written by
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options. 
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{2E64FE}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Setyadhi Putra Deriyanto}
+  \tagline{Junior System Administrator}
+
+\photo{3cm}{A11_2013_07785.jpg}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \homepage{setyadhiputra.com}
+  \email{setyadhiputrad@gmail.com}
+  \linkedin{id.linkedin.com/in/setyadhi}
+  \github{github.com/setyadhiputrad}
+  \phone{+62-85712119459}
+ % \mailaddress
+  \location{Semarang, Indonesia}
+ % \fb{facebook.com/setyadi.p.d}
+
+}
+
+%% Make the header extend all the way to the right, if you want. Extend the right margin by 8cm (=6.8cm marginparwidth + 1.2cm marginparsep)
+\begin{adjustwidth}{}{-8cm}
+\makecvheader
+\end{adjustwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Experience}
+
+\cvevent{Openstack System Administrator}{Dinus Open Source Community (DOSCOM)}{Juli 2016 -- Ongoing}{UDINUS, Semarang, Indonesia}
+\begin{itemize}
+\item Build, Development, and Research OpenStack
+\end{itemize}
+
+\divider
+
+\cvevent{System Administrator}{Dinus Open Source Community (DOSCOM)}{Oktober 2015 -- Ongoing}{UDINUS, Semarang, Indonesia}
+\begin{itemize}
+\item doscom.org
+\item tealinuxos.org
+\item pinguin.dinus.ac.id
+\item studio.tealinuxos.org
+\end{itemize}
+
+\divider
+
+\cvevent{Junior Development and Operations}{MailTarget.co}{Desember 2016 -- February 2017}{Semarang, Indonesia}
+\begin{itemize}
+\item Internship, and Junior System Administrator
+\end{itemize}
+
+\divider
+
+\cvevent{Junior Development and Operations}{GNEWS}{Agustus 2016 -- Desember 2016}{Semarang, Indonesia}
+\begin{itemize}
+\item Internship, and Junior System Administrator
+\end{itemize}
+
+\divider
+
+\cvevent{Organizer \&  Network Coordinator}{Dinus Open Source Community (DOSCOM)}{Agustus 2014 -- Agustus 2015}{UDINUS, Semarang, Indonesia}
+\begin{itemize}
+\item doscom.org
+\end{itemize}
+
+\divider
+
+\cvevent{TeaLinuxOS Developer Team}{Dinus Open Source Community (DOSCOM)}{September 2014 -- Desember 2016}{UDINUS, Semarang, Indonesia}
+\begin{itemize}
+\item tealinuxos.org
+\end{itemize}
+
+\cvsection{Interest}
+
+\cvskill{Linux}{5}
+\cvskill{Server}{4}
+\cvskill{Networking}{3}
+\cvskill{Security}{3}
+\cvskill{Bash}{3}
+\cvskill{Python}{2}
+
+% \divider
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+%\cvsection{A Day of My Life}
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+%\wheelchart{1.5cm}{0.5cm}{%
+%  10/13em/accent!30/Sleeping \& dreaming about research, 
+%  25/9em/accent!60/Attending Lectures \& Taking Notes,
+%  5/12em/accent!10/Programming \& Hacking, 
+%  20/12em/accent!40/Social Media,
+%  5/8em/accent!20/Group Study Sessions (Never too much studying!),
+%  30/9em/accent/Presenting Research or working on projects,
+ % 5/8em/accent!20/Playing with my dog Max
+%}
+%\clearpage
+%\cvsection[page2sidebar]{Undergraduate Research}
+%\nocite{*}
+%\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Review Articles}},type=book]
+%\divider
+%\printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Course Articles}}, type=article]
+%\divider
+%\printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Poster Presentations}},type=article]
+
+\end{document}
